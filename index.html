@@ -36,7 +36,6 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
       <a href="subscription.html">Subscription</a>
-      <a href="#pricing">Pricing</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
@@ -74,7 +73,7 @@
         <div class="magnetic"><a href="subscription.html" class="btn btn-primary btn-lg">Start Subscription <i data-lucide="arrow-right"></i></a></div>
         <div class="magnetic"><a href="#how-it-works" class="btn btn-ghost btn-lg">See How It Works</a></div>
       </div>
-      <p class="hero-note">Cancel anytime. No long-term contracts. Plans from ₱1,499/month.</p>
+      <p class="hero-note">Cancel anytime. No long-term contracts. Plans from ₱459/month.</p>
     </div>
 
     <div class="container">
@@ -121,208 +120,110 @@
     </div>
   </section>
 
-  <!-- ============== PRICING ============== -->
-  <style>
-    /* ---- Pricing plans ---- */
-    .pricing-grid{align-items:stretch;}
-    .price-card{display:flex;flex-direction:column;position:relative;padding:36px 32px 32px;text-align:left;}
-    .price-badge{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:650;letter-spacing:.02em;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(245,245,250,.85);margin-bottom:18px;}
-    .price-card .h-md{margin-bottom:6px;}
-    .price-amount{display:flex;align-items:baseline;gap:4px;font-family:inherit;font-weight:800;font-size:40px;line-height:1;letter-spacing:-.02em;color:#F5F5FA;margin:6px 0 14px;}
-    .price-period{font-size:15px;font-weight:550;color:rgba(245,245,250,.5);margin-left:2px;}
-    .price-desc{font-size:14.5px;line-height:1.55;color:rgba(245,245,250,.62);margin-bottom:22px;min-height:66px;}
-    .price-features{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-direction:column;gap:11px;flex:1;}
-    .price-features li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(245,245,250,.8);line-height:1.4;}
-    .price-features li i{width:17px;height:17px;flex-shrink:0;margin-top:1px;color:var(--accent,#16A34A);stroke-width:2.75;}
-    .price-card.featured .price-features li i{color:#16A34A;}
-    .price-integrations{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;}
-    .price-integrations span{font-size:12px;font-weight:550;color:rgba(245,245,250,.72);background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.22);border-radius:999px;padding:5px 11px;}
-    .btn-block{width:100%;justify-content:center;}
-    .price-guarantee{text-align:center;font-size:12.5px;color:rgba(245,245,250,.45);margin:14px 0 0;}
-
-    .price-card.featured{
-      background:linear-gradient(180deg, rgba(22,163,74,.08), rgba(255,255,255,.03)) padding-box,
-                 linear-gradient(135deg,#16A34A,#22C55E,#16A34A) border-box;
-      border:1.5px solid transparent;
-      box-shadow:0 30px 70px -20px rgba(22,163,74,.35), 0 0 0 1px rgba(22,163,74,.08);
-    }
-    .price-card.featured .price-badge.featured-badge{background:linear-gradient(135deg,#16A34A,#22C55E);border-color:transparent;color:#fff;box-shadow:0 6px 18px -6px rgba(22,163,74,.6);}
-    @media (min-width:961px){
-      .price-card.featured{transform:translateY(-18px) scale(1.045);z-index:2;}
-      .price-card.featured:hover{transform:translateY(-24px) scale(1.045);}
-    }
-
-    /* ---- Includes icon grid reuses .feat-grid / .feat / .fi from Features section ---- */
-
-    /* ---- Optional add-ons ---- */
-    .addon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-    .addon-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px 22px;transition:transform .3s cubic-bezier(.22,1,.36,1),border-color .3s,background .3s;}
-    .addon-card:hover{transform:translateY(-4px);border-color:rgba(22,163,74,.35);background:rgba(255,255,255,.05);}
-    .addon-name{display:block;font-size:14.5px;font-weight:600;color:#F5F5FA;margin-bottom:6px;}
-    .addon-price{display:block;font-size:13.5px;font-weight:650;color:#16A34A;}
-    @media (max-width:960px){.addon-grid{grid-template-columns:repeat(2,1fr);}}
-    @media (max-width:560px){.addon-grid{grid-template-columns:1fr;}}
-  </style>
-
-  <section class="section" id="pricing">
+  <!-- ============== PRICING TIERS ============== -->
+  <section class="tiers-section" id="tiers">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="eyebrow"><span class="dot"></span>Pricing plans</span>
-        <h2 class="h-xl">Website Plans That<br>Grow With Your Business.</h2>
-        <p class="lede">Professional websites with hosting, maintenance, and continuous improvements — starting at only ₱459/month.</p>
+        <span class="eyebrow"><span class="dot"></span>Plans for every stage</span>
+        <h2 class="h-xl">Choose Your Plan</h2>
+        <p class="lede">Start simple, add automation as you grow, or go all-in with a fully custom business platform.</p>
       </div>
 
-      <div class="grid-3 pricing-grid stagger">
+      <div class="tiers-grid stagger">
 
         <!-- Standard -->
-        <div class="card price-card" data-reveal>
-          <span class="price-badge">Starter</span>
-          <h3 class="h-md">Standard</h3>
-          <div class="price-amount">₱459<span class="price-period">/month</span></div>
-          <p class="price-desc">Perfect for startups, freelancers, and small businesses that need a professional online presence.</p>
-          <ul class="price-features">
-            <li><i data-lucide="check"></i><span>Up to 5 Pages</span></li>
-            <li><i data-lucide="check"></i><span>Responsive Design</span></li>
-            <li><i data-lucide="check"></i><span>Mobile-Friendly</span></li>
-            <li><i data-lucide="check"></i><span>Contact Form</span></li>
-            <li><i data-lucide="check"></i><span>Google Maps Integration</span></li>
-            <li><i data-lucide="check"></i><span>Social Media Links</span></li>
-            <li><i data-lucide="check"></i><span>Basic SEO Setup</span></li>
-            <li><i data-lucide="check"></i><span>SSL Security (HTTPS)</span></li>
-            <li><i data-lucide="check"></i><span>Free Hosting</span></li>
-            <li><i data-lucide="check"></i><span>Website Maintenance</span></li>
-            <li><i data-lucide="check"></i><span>Monthly Backup</span></li>
-            <li><i data-lucide="check"></i><span>1 Content Update per Month</span></li>
-            <li><i data-lucide="check"></i><span>Email Support</span></li>
+        <div class="tier" data-reveal>
+          <span class="tier-badge">Starter</span>
+          <div class="tier-name">Standard</div>
+          <div class="tier-price"><span class="amt">₱459</span><span class="per">/month</span></div>
+          <p class="tier-desc">Perfect for startups, freelancers, and small businesses that need a professional online presence.</p>
+          <ul class="tier-list">
+            <li><span class="tick"><i data-lucide="check"></i></span>Up to 5 Pages</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Responsive Design</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Mobile-Friendly</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Contact Form</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Google Maps Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Social Media Links</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Basic SEO Setup</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>SSL Security (HTTPS)</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Free Hosting</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Website Maintenance</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Monthly Backup</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>1 Content Update per Month</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Email Support</li>
           </ul>
-          <div class="magnetic"><a href="subscription.html" class="btn btn-ghost btn-block">Get Started</a></div>
+          <a href="subscription.html" class="tier-btn">Get Started</a>
         </div>
 
         <!-- Premium (featured) -->
-        <div class="card price-card featured" data-reveal aria-label="Premium plan, most popular">
-          <span class="price-badge featured-badge">⭐ Most Popular</span>
-          <h3 class="h-md">Premium</h3>
-          <div class="price-amount">₱689<span class="price-period">/month</span></div>
-          <p class="price-desc">Everything in Standard plus powerful integrations that help automate customer inquiries and bookings.</p>
-          <ul class="price-features">
-            <li><i data-lucide="check-circle-2"></i><span>Everything in Standard</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Up to 10 Pages</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Booking System</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Appointment Scheduling</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Quote Request Forms</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Contact Management Forms</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Order Inquiry Forms</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>WhatsApp Integration</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Facebook Messenger Integration</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Google Analytics</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Enhanced SEO</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Speed Optimization</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Monthly Performance Report</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>3 Content Updates per Month</span></li>
-            <li><i data-lucide="check-circle-2"></i><span>Priority Support</span></li>
+        <div class="tier tier-featured" data-reveal-scale>
+          <span class="tier-badge"><i data-lucide="star"></i>Most Popular</span>
+          <div class="tier-name">Premium</div>
+          <div class="tier-price"><span class="amt">₱689</span><span class="per">/month</span></div>
+          <p class="tier-desc">Everything in Standard plus powerful integrations that help automate customer inquiries and bookings.</p>
+          <ul class="tier-list">
+            <li><span class="tick"><i data-lucide="check"></i></span>Everything in Standard</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Up to 10 Pages</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Booking System</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Appointment Scheduling</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Quote Request Forms</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Contact Management Forms</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Order Inquiry Forms</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>WhatsApp Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Facebook Messenger Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Google Analytics</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Enhanced SEO</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Speed Optimization</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Monthly Performance Report</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>3 Content Updates per Month</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Priority Support</li>
           </ul>
-          <div class="price-integrations" aria-label="Integration examples">
-            <span>Restaurant Reservations</span><span>Construction Quotes</span><span>Clinic Booking</span><span>Real Estate Inquiries</span><span>Service Booking</span><span>Order Requests</span>
+          <div class="tier-tags">
+            <span>Restaurant Reservations</span>
+            <span>Construction Quotes</span>
+            <span>Clinic Booking</span>
+            <span>Real Estate Inquiries</span>
+            <span>Service Booking</span>
+            <span>Order Requests</span>
           </div>
-          <div class="magnetic"><a href="subscription.html" class="btn btn-primary btn-block">Choose Premium</a></div>
-          <p class="price-guarantee">Cancel anytime · No setup fees</p>
+          <a href="subscription.html" class="tier-btn">Choose Premium</a>
         </div>
 
         <!-- Enterprise -->
-        <div class="card price-card" data-reveal>
-          <span class="price-badge">Business</span>
-          <h3 class="h-md">Enterprise</h3>
-          <div class="price-amount">₱1,289<span class="price-period">/month</span></div>
-          <p class="price-desc">A complete business website with advanced integrations, automation, and custom functionality.</p>
-          <ul class="price-features">
-            <li><i data-lucide="check"></i><span>Everything in Premium</span></li>
-            <li><i data-lucide="check"></i><span>Unlimited Pages</span></li>
-            <li><i data-lucide="check"></i><span>Custom Website Design</span></li>
-            <li><i data-lucide="check"></i><span>Advanced Booking System</span></li>
-            <li><i data-lucide="check"></i><span>Customer Portal</span></li>
-            <li><i data-lucide="check"></i><span>Member Login</span></li>
-            <li><i data-lucide="check"></i><span>CRM Integration</span></li>
-            <li><i data-lucide="check"></i><span>Payment Gateway Integration</span></li>
-            <li><i data-lucide="check"></i><span>Multi-step Quote Forms</span></li>
-            <li><i data-lucide="check"></i><span>Custom Database Integration</span></li>
-            <li><i data-lucide="check"></i><span>E-commerce Capability</span></li>
-            <li><i data-lucide="check"></i><span>Blog &amp; News System</span></li>
-            <li><i data-lucide="check"></i><span>Advanced SEO</span></li>
-            <li><i data-lucide="check"></i><span>Image Optimization</span></li>
-            <li><i data-lucide="check"></i><span>Business Email Setup</span></li>
-            <li><i data-lucide="check"></i><span>Security Monitoring</span></li>
-            <li><i data-lucide="check"></i><span>Weekly Backups</span></li>
-            <li><i data-lucide="check"></i><span>Unlimited Content Updates</span></li>
-            <li><i data-lucide="check"></i><span>Feature Requests</span></li>
-            <li><i data-lucide="check"></i><span>Ongoing Website Improvements</span></li>
-            <li><i data-lucide="check"></i><span>VIP Priority Support</span></li>
+        <div class="tier" data-reveal>
+          <span class="tier-badge">Business</span>
+          <div class="tier-name">Enterprise</div>
+          <div class="tier-price"><span class="amt">₱1,289</span><span class="per">/month</span></div>
+          <p class="tier-desc">A complete business website with advanced integrations, automation, and custom functionality.</p>
+          <ul class="tier-list">
+            <li><span class="tick"><i data-lucide="check"></i></span>Everything in Premium</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Unlimited Pages</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Custom Website Design</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Advanced Booking System</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Customer Portal</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Member Login</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>CRM Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Payment Gateway Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Multi-step Quote Forms</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Custom Database Integration</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>E-commerce Capability</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Blog &amp; News System</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Advanced SEO</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Image Optimization</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Business Email Setup</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Security Monitoring</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Weekly Backups</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Unlimited Content Updates</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Feature Requests</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>Ongoing Website Improvements</li>
+            <li><span class="tick"><i data-lucide="check"></i></span>VIP Priority Support</li>
           </ul>
-          <div class="magnetic"><a href="#contact" class="btn btn-ghost btn-block">Contact Sales</a></div>
+          <a href="index.html#contact" class="tier-btn">Contact Sales</a>
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <!-- ============== EVERY PLAN INCLUDES ============== -->
-  <section class="section section-soft" id="pricing-includes">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="eyebrow"><span class="dot"></span>Baseline, on every plan</span>
-        <h2 class="h-xl">Every Plan Includes</h2>
-      </div>
-
-      <div class="feat-grid stagger">
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="layout-template"></i></div><div><strong>Responsive Design</strong><span>Looks flawless on every device</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="smartphone"></i></div><div><strong>Mobile Friendly</strong><span>Built touch-first, not an afterthought</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="server"></i></div><div><strong>Free Hosting</strong><span>No separate hosting bill, ever</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="lock"></i></div><div><strong>SSL Certificate</strong><span>Secure HTTPS on every page</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="wrench"></i></div><div><strong>Website Maintenance</strong><span>We keep everything running</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="zap"></i></div><div><strong>Fast Loading</strong><span>Optimized for speed, always</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="archive"></i></div><div><strong>Monthly Backups</strong><span>Your data, safely stored</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="headset"></i></div><div><strong>Technical Support</strong><span>Real people, real answers</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="cloud"></i></div><div><strong>Cloud Hosting</strong><span>Reliable uptime by default</span></div></div>
-        <div class="feat" data-reveal><div class="fi"><i data-lucide="shield-check"></i></div><div><strong>Security Monitoring</strong><span>Proactive protection, day and night</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== OPTIONAL ADD-ONS ============== -->
-  <section class="section" id="pricing-addons">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="eyebrow"><span class="dot"></span>Customize it</span>
-        <h2 class="h-xl">Optional Add-ons</h2>
-        <p class="lede">Tailor any plan with extras, only pay for what you actually need.</p>
-      </div>
-
-      <div class="addon-grid stagger">
-        <div class="addon-card" data-reveal><span class="addon-name">Additional Page</span><span class="addon-price">₱80/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Business Email</span><span class="addon-price">₱100/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Extra Booking Module</span><span class="addon-price">₱150/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Online Store Upgrade</span><span class="addon-price">₱350/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Custom Form</span><span class="addon-price">₱120/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Additional Language</span><span class="addon-price">₱250/month</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Logo Design</span><span class="addon-price">₱1,500 one-time</span></div>
-        <div class="addon-card" data-reveal><span class="addon-name">Copywriting</span><span class="addon-price">Starting at ₱800</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== PRICING CTA ============== -->
-  <section class="section" id="pricing-cta">
-    <div class="container">
-      <div class="cta-band" data-reveal-scale>
-        <span class="eyebrow" style="background:rgba(22,163,74,.1);border-color:rgba(22,163,74,.28);color:#4ADE80;">
-          <span class="dot"></span>Let's get you growing
-        </span>
-        <h2 class="h-xl">Ready to Grow Your<br>Business Online?</h2>
-        <p class="lede">Launch a professional website with Growora and let us handle hosting, maintenance, security, and updates — while you focus on your business.</p>
-        <div class="hero-cta">
-          <div class="magnetic"><a href="subscription.html" class="btn btn-primary btn-lg">Start Your Website <i data-lucide="arrow-right"></i></a></div>
-          <div class="magnetic"><a href="#contact" class="btn btn-ghost btn-lg">Contact Us</a></div>
-        </div>
-      </div>
+      <p class="tiers-note">All plans include free hosting, SSL security, and cancel-anytime billing. Prices in PHP.</p>
     </div>
   </section>
 
